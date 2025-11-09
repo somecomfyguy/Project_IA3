@@ -37,7 +37,7 @@ Deep learning models for object recognition have achieved remarkable accuracy bu
 
 We use the **CIFAT-10** dataset
 
-- 60000 32x32 colour images
+- 60000 32x32x3 (color) images
 - 10 classes
 - 6000 pictures for each class
 - There are 50000 training images and 10000 test images
