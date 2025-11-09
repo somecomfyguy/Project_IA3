@@ -26,8 +26,7 @@ Deep learning models for object recognition have achieved remarkable accuracy bu
 ---
 
 ## Project Objectives
-
-- Analyze the vulnerability of **YOLO** object detection models to adversarial attacks.
+- Implement a model for object detection
 - Implement and evaluate two attack methods: **PGD** and **DeepFool**.
 - Implement and assess defense strategies: **Adversarial Training** and **Jacobian Regularization**.
 - Compare model performance on clean and adversarially perturbed data.
@@ -53,7 +52,7 @@ We use the **CIFAT-10** dataset
 #### Jacobian Regularization
 
 - Adds a regularization term to the loss function based on the Jacobian of the model’s output w.r.t input.
-- Encourages smoother model gradients, making YOLO less sensitive to small perturbations.
+- Encourages smoother model gradients
 
 ---
 https://www.cs.toronto.edu/~kriz/cifar.html
