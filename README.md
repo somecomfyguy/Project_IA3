@@ -42,3 +42,18 @@ We use the **COCO dataset** (Common Objects in Context):
 - 80 object categories.
 - Contains over 200,000 labeled images.
 - Standard preprocessing: resizing, normalization, and data augmentation.
+
+### Defenses
+
+#### Adversarial Training
+
+- Augments training data with adversarial examples.
+- YOLO model learns to correctly detect objects in both clean and adversarial images.
+- Improves robustness against attacks seen during training.
+
+#### Jacobian Regularization
+
+- Adds a regularization term to the loss function based on the Jacobian of the model’s output w.r.t input.
+- Encourages smoother model gradients, making YOLO less sensitive to small perturbations.
+
+---
