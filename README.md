@@ -16,3 +16,29 @@
 - [Implementation](#implementation)
 - [Results](#results)
 - [References](#references)
+
+---
+
+## Introduction
+
+Deep learning models for object recognition have achieved remarkable accuracy but are vulnerable to **adversarial attacks**, where small perturbations to input images can lead to misclassification or missed detections. This project investigates common attack methods and evaluates defense mechanisms to improve the robustness of object detection systems.
+
+---
+
+## Project Objectives
+
+- Analyze the vulnerability of **YOLO** object detection models to adversarial attacks.
+- Implement and evaluate two attack methods: **PGD** and **DeepFool**.
+- Implement and assess defense strategies: **Adversarial Training** and **Jacobian Regularization**.
+- Compare model performance on clean and adversarially perturbed data.
+
+---
+
+## Dataset
+
+We use the **COCO dataset** (Common Objects in Context):
+
+- Large-scale object detection, segmentation, and captioning dataset.
+- 80 object categories.
+- Contains over 200,000 labeled images.
+- Standard preprocessing: resizing, normalization, and data augmentation.
