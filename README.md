@@ -55,4 +55,8 @@ We use the **CIFAT-10** dataset
 - Encourages smoother model gradients
 
 ---
+#### References
+
 https://www.cs.toronto.edu/~kriz/cifar.html
+
+---
