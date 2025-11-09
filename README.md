@@ -36,19 +36,18 @@ Deep learning models for object recognition have achieved remarkable accuracy bu
 
 ## Dataset
 
-We use the **COCO dataset** (Common Objects in Context): VisDrone2019?
+We use the **CIFAT-10** dataset
 
-- Large-scale object detection, segmentation, and captioning dataset.
-- 80 object categories.
-- Contains over 200,000 labeled images.
-- Standard preprocessing: resizing, normalization, and data augmentation.
+- 60000 32x32 colour images
+- 10 classes
+- 6000 pictures for each class
+- There are 50000 training images and 10000 test images
 
 ### Defenses
 
 #### Adversarial Training
 
 - Augments training data with adversarial examples.
-- YOLO model learns to correctly detect objects in both clean and adversarial images.
 - Improves robustness against attacks seen during training.
 
 #### Jacobian Regularization
@@ -57,3 +56,4 @@ We use the **COCO dataset** (Common Objects in Context): VisDrone2019?
 - Encourages smoother model gradients, making YOLO less sensitive to small perturbations.
 
 ---
+https://www.cs.toronto.edu/~kriz/cifar.html
