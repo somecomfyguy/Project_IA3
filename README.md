@@ -35,14 +35,14 @@ Deep learning models for object recognition have achieved remarkable accuracy bu
 ## Attacks
 #### Adversarial Attacks
 
-Projected Gradient Descent (PGD)
+##### Projected Gradient Descent (PGD)
 
 - Iterative adversarial attack that refines perturbations over multiple steps.
 - At each iteration, the input is modified in the direction of the gradient of the loss w.r.t. the input.
 - The perturbation is projected back into a valid range (bounded by a norm constraint, typically L_{inf}).
 - Known for being one of the strongest first-order attacks and widely used to test model robustness.
 
-DeepFool
+##### DeepFool
 
 - Iterative attack that finds the minimal perturbation required to change a model’s classification.
 - Approximates the decision boundary locally as a hyperplane and moves the input across it.
