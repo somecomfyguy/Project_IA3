@@ -71,9 +71,9 @@ We use the **CIFAT-10** dataset
 ---
 ### References
 
-https://www.cs.toronto.edu/~kriz/cifar.html
-https://adversarial-robustness-toolbox.readthedocs.io/en/latest/
-https://arxiv.org/pdf/1511.04599
-https://arxiv.org/html/2402.09154v1
+ https://www.cs.toronto.edu/~kriz/cifar.html
+ https://adversarial-robustness-toolbox.readthedocs.io/en/latest/
+ https://arxiv.org/pdf/1511.04599
+ https://arxiv.org/html/2402.09154v1
 
 ---
