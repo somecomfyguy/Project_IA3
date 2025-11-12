@@ -32,6 +32,20 @@ Deep learning models for object recognition have achieved remarkable accuracy bu
 - Compare model performance on clean and adversarially perturbed data.
 
 ---
+## Adversarial Attacks
+### Projected Gradient Descent (PGD)
+
+- Iterative adversarial attack that refines perturbations over multiple steps.
+- At each iteration, the input is modified in the direction of the gradient of the loss w.r.t. the input.
+- The perturbation is projected back into a valid range (bounded by a norm constraint, typically L_{inf}).
+- Known for being one of the strongest first-order attacks and widely used to test model robustness.
+
+### DeepFool
+
+- Iterative attack that finds the minimal perturbation required to change a model’s classification.
+- Approximates the decision boundary locally as a hyperplane and moves the input across it.
+- Generates small, human imperceptible perturbations.
+- Useful for evaluating a model’s sensitivity to small, precise changes in input.
 
 ## Dataset
 
@@ -42,21 +56,24 @@ We use the **CIFAT-10** dataset
 - 6000 pictures for each class
 - There are 50000 training images and 10000 test images
 
-### Defenses
+## Defenses
 
-#### Adversarial Training
+### Adversarial Training
 
 - Augments training data with adversarial examples.
 - Improves robustness against attacks seen during training.
 
-#### Jacobian Regularization
+### Jacobian Regularization
 
 - Adds a regularization term to the loss function based on the Jacobian of the model’s output w.r.t input.
 - Encourages smoother model gradients
 
 ---
-#### References
+### References
 
-https://www.cs.toronto.edu/~kriz/cifar.html
+- https://www.cs.toronto.edu/~kriz/cifar.html
+- https://adversarial-robustness-toolbox.readthedocs.io/en/latest/
+- https://arxiv.org/pdf/1511.04599
+- https://arxiv.org/html/2402.09154v1
 
 ---
